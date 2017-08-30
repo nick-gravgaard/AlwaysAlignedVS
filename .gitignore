@@ -1,0 +1,15 @@
+[Oo]bj
+[Bb]in
+*.suo
+*.[Cc]ache
+*.ncb
+*.log
+*.DS_Store
+*.bak
+*~
+[Tt]humbs.db
+TestResults
+packages
+
+# Visual Studio cache/options directory
+.vs/

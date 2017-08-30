@@ -1,0 +1,30 @@
+﻿<Window x:Class="AlwaysAligned.SettingsDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Settings for elastic tabstops"
+        Name="Settings"
+		Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" ResizeMode="NoResize" SizeToContent="WidthAndHeight">
+    <Grid DataContext="{Binding ElementName=Settings}">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="Auto" />
+			<ColumnDefinition Width="Auto" />
+		</Grid.ColumnDefinitions>
+        <CheckBox Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Name="enabled" IsChecked="{Binding Configuration.Enabled}" Checked="widgetChanged" Unchecked="widgetChanged" Content="Enable elastic tabstops" Margin="8" />
+		<CheckBox Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Name="convertOnLoadSave" IsChecked="{Binding Configuration.ConvertOnLoadSave}" Checked="widgetChanged" Unchecked="widgetChanged" Content="Convert to/from space based files" Margin="8" />
+		<Label Grid.Column="0" Grid.Row="2" Content="Minimum cell width (pixels):" />
+		<Label Grid.Column="0" Grid.Row="3" Content="Cell padding (pixels):" />
+        <TextBox Grid.Column="1" Grid.Row="2" Text="{Binding Configuration.MinimumCellWidth}" Name="minimumCellWidth" TextChanged="widgetChanged" PreviewTextInput="textBox_PreviewTextInput" HorizontalAlignment="Right" Margin="8,4" Width="80" />
+        <TextBox Grid.Column="1" Grid.Row="3" Text="{Binding Configuration.CellPadding}" Name="cellPadding" TextChanged="widgetChanged" PreviewTextInput="textBox_PreviewTextInput" HorizontalAlignment="Right" Margin="8,4" Width="80" />
+		<StackPanel Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2" HorizontalAlignment="Right" Name="buttonsStackPanel" Orientation="Horizontal">
+			<Button MinWidth="80" Name="saveButton" Click="saveButton_Click" Content="Save" Margin="8,8,4,8" IsEnabled="False" />
+			<Button MinWidth="80" Name="dontSaveButton" Click="dontSaveButton_Click" Content="Don't Save" Margin="4,8,8,8" />
+		</StackPanel>
+	</Grid>
+</Window>

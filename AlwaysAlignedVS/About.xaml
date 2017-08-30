@@ -1,0 +1,35 @@
+﻿<Window x:Class="AlwaysAligned.About"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:local="clr-namespace:AlwaysAligned"
+		Title="About" Width="520" ResizeMode="NoResize" SizeToContent="Height" Topmost="True" WindowStartupLocation="CenterScreen" WindowStyle="None" ShowInTaskbar="False">
+	<Border BorderThickness="1,0" BorderBrush="#333">
+		<DockPanel LastChildFill="True" Margin="30,0">
+			<Rectangle DockPanel.Dock="Top" Height="20" Margin="0,0,0,10">
+				<Rectangle.Fill>
+					<SolidColorBrush Color="#333" />
+				</Rectangle.Fill>
+			</Rectangle>
+			<Rectangle DockPanel.Dock="Bottom" Height="20" Margin="0,10,0,0">
+				<Rectangle.Fill>
+					<SolidColorBrush Color="#333" />
+				</Rectangle.Fill>
+			</Rectangle>
+			<StackPanel>
+				<local:Logo Margin="0,20" />
+				<RichTextBox IsReadOnly="True" IsDocumentEnabled="True" FontFamily="Cambria" FontSize="16" BorderThickness="0" Foreground="#333" Padding="-4,0" Margin="0,10">
+					<FlowDocument Name="AboutFlowDoc" LineHeight="24" TextAlignment="Justify">
+						<Paragraph Name="AboutParagraph">
+							This is free software, released under the MIT License. To learn about elastic tabstops, see
+							<Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="http://nickgravgaard.com/elastic-tabstops/">nickgravgaard.com/elastic-tabstops/</Hyperlink>
+						</Paragraph>
+						<Paragraph TextAlignment="Center" FontSize="13">
+							Copyright © 2010-2017 Nick Gravgaard
+						</Paragraph>
+					</FlowDocument>
+				</RichTextBox>
+				<Button Margin="0,10" IsDefault="True" HorizontalAlignment="Center" Padding="20,0" Click="Button_Click">Close</Button>
+			</StackPanel>
+		</DockPanel>
+	</Border>
+</Window>
