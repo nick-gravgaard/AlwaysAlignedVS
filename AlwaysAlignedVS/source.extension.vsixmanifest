@@ -5,7 +5,7 @@
         <DisplayName>Always Aligned VS</DisplayName>
         <Description xml:space="preserve">Elastic tabstops for Visual Studio</Description>
         <MoreInfo>http://www.alwaysaligned.net</MoreInfo>
-        <License>..\LICENSE.txt</License>
+        <License>..\LICENSE.md</License>
         <Icon>Resources\icon.png</Icon>
         <PreviewImage>Resources\previewimage.png</PreviewImage>
     </Metadata>

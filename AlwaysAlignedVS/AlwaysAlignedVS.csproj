@@ -188,7 +188,7 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\logoframes.png" />
-    <Content Include="..\LICENSE.txt">
+    <Content Include="..\LICENSE.md">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
