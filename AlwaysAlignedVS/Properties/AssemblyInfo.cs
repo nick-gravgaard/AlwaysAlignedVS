@@ -12,7 +12,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Always Aligned VS (elastic tabstops for Visual Studio)")]
-[assembly: AssemblyCopyright("Copyright © 2010-2017 Nick Gravgaard")]
+[assembly: AssemblyCopyright("Copyright © 2010-2019 Nick Gravgaard")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]   
 [assembly: ComVisible(false)]     
@@ -29,8 +29,8 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Revision and Build Numbers 
 // by using the '*' as shown below:
 
-[assembly: AssemblyVersion("2017.0.0.*")]
-[assembly: AssemblyInformationalVersion("2017.0.0")]
+[assembly: AssemblyVersion("2019.0.0.*")]
+[assembly: AssemblyInformationalVersion("2019.0.0")]
 // [assembly: AssemblyFileVersion("0.0.0.0")]
 
 [assembly: InternalsVisibleTo("MyProject.Domain.Tests, PublicKey=0024000004800000940000000602000000240000525341310004000001000100c5270c496849ad8424ebb61da8fc757eb1f7bca4e9efaa9a7b742dad21093784d4218f7a786e7ee4985266904ec76b992bda7c4ead130af05390c47c0504c93278e4da28bdf5fac8e35144f787479793085d5d2df821cfb915a44be90534df569531dc3d3fdc34d2c336d50be53211473af866ea701e475bd3c194a0a8b2b9a3")]
