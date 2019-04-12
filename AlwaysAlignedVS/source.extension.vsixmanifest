@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="AlwaysAlignedVS.c982f983-3dce-4114-91c0-e534dd039dda" Version="2017.0.0" Language="en-US" Publisher="Nick Gravgaard" />
+        <Identity Id="AlwaysAlignedVS.c982f983-3dce-4114-91c0-e534dd039dda" Version="2019.0.0" Language="en-US" Publisher="Nick Gravgaard" />
         <DisplayName>Always Aligned VS</DisplayName>
         <Description xml:space="preserve">Elastic tabstops for Visual Studio</Description>
         <MoreInfo>http://www.alwaysaligned.net</MoreInfo>
-        <License>..\LICENSE.md</License>
+        <License>LICENSE.md</License>
         <Icon>Resources\icon.png</Icon>
         <PreviewImage>Resources\previewimage.png</PreviewImage>
     </Metadata>
     <Installation>
-        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0,15.0]" />
-        <InstallationTarget Version="[12.0,15.0)" Id="Microsoft.VisualStudio.Pro" />
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0,17.0)" />
+        <InstallationTarget Version="[12.0,17.0)" Id="Microsoft.VisualStudio.Pro" />
     </Installation>
     <Dependencies>
         <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
@@ -22,6 +22,6 @@
         <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" />
     </Assets>
     <Prerequisites>
-        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0.26606.0,16.0)" DisplayName="Visual Studio core editor" />
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0.26606.0,17.0)" DisplayName="Visual Studio core editor" />
     </Prerequisites>
 </PackageManifest>
