@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("ElasticTabstopsConverterTest")]
-[assembly: AssemblyCopyright("Copyright © 2010-2017 Nick Gravgaard")]
+[assembly: AssemblyCopyright("Copyright © 2010-2019 Nick Gravgaard")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

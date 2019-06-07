@@ -13,3 +13,4 @@ packages
 
 # Visual Studio cache/options directory
 .vs/
+/AlwaysAlignedVS/AlwaysAlignedVS.csproj.user
